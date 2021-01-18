@@ -7,6 +7,7 @@ describe('ProductsList component', () => {
     let mockAddProduct;
     let mockRemoveProduct;
     const testProducts = [{
+        _id: 'testId',
         id: 'testId',
         brand: 'testBrand',
         description: 'testDescription',

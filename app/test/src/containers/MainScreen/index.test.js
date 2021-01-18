@@ -7,6 +7,7 @@ describe('MainScreen container', () => {
 
 
     const testProducts = [{
+        _id: 'testId',
         id: 'testId',
         brand: 'testBrand',
         description: 'testDescription',
