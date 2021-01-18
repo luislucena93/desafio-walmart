@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductRow component should render ProdcutDisplay correctly for product with quantity 0 1`] = `
+<div>
+  <div
+    class="productRow"
+  >
+    <img
+      src="http://testImage"
+    />
+    <div
+      class="productSummary"
+    >
+      <p
+        class="bold"
+      >
+        testBrand
+      </p>
+      <p>
+        testDescription
+      </p>
+      <p>
+        $
+        1.000
+      </p>
+      <p
+        class="bold"
+      >
+        Cantidad: 
+        2
+      </p>
+    </div>
+    <div
+      class="productTotal"
+    >
+      <p
+        class="bold"
+      >
+        $
+        2.000
+      </p>
+      <div
+        class="addRemoveButtons"
+      >
+        <button>
+          -
+        </button>
+        <p>
+          2
+        </p>
+        <button>
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,39 @@
+@import '../../commons/styleVars';
+
+.headerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 15%;
+  height: 100px;
+  background-color: $mainColor;
+}
+
+.logo {
+  width: 200px;
+  height: 80px;
+}
+
+.shoppingCart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  background-color: $secondaryColor;
+  padding: 10px;
+  img {
+    width: 50%;
+  }
+  div {
+    border-radius: 50px;
+    background-color: $yellow;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $mainColor;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../commons/styleVars';
+
+.productsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: $backgroundColor;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}

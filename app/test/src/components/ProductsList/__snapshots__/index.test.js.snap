@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductsList component should render ProductsList correctly for empty list 1`] = `
+<div>
+  <div
+    class="productsList"
+  />
+</div>
+`;
+
+exports[`ProductsList component should render ProductsList correctly for list with no selected products 1`] = `
+<div>
+  <div
+    class="productsList"
+  >
+    <div
+      class="productDisplay"
+    >
+      <div>
+        <img
+          class="thumbnail"
+          src="http://testImage"
+        />
+        <div
+          class="separator"
+        />
+        <p
+          class="productDescription"
+        >
+          <span>
+            testBrand
+          </span>
+           
+          testDescription
+        </p>
+        <p
+          class="price"
+        >
+          $
+          1.000
+        </p>
+      </div>
+      <button
+        class="addButton"
+      >
+        Agregar
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductsList component should render ProductsList correctly for list with selected products 1`] = `
+<div>
+  <div
+    class="productsList"
+  >
+    <div
+      class="productDisplay"
+    >
+      <div>
+        <img
+          class="thumbnail"
+          src="http://testImage"
+        />
+        <div
+          class="separator"
+        />
+        <p
+          class="productDescription"
+        >
+          <span>
+            testBrand
+          </span>
+           
+          testDescription
+        </p>
+        <p
+          class="price"
+        >
+          $
+          1.000
+        </p>
+      </div>
+      <div
+        class="addRemoveButtons"
+      >
+        <button
+          data-testid="removeProduct"
+        >
+          -
+        </button>
+        <p>
+          2
+        </p>
+        <button
+          data-testid="addProduct"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

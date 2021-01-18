@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render header correctly for empty cart 1`] = `
+<div>
+  <div
+    class="headerBar"
+  >
+    <img
+      alt="Logo"
+      class="logo"
+      src="test-file-stub"
+    />
+    <div
+      class="shoppingCart"
+    >
+      <img
+        alt="shoppingCartIcon"
+        src="test-file-stub"
+      />
+      <div
+        data-testid="totalProducts"
+      >
+        0
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header component sould should render header correctly for cart with 2 products 1`] = `
+<div>
+  <div
+    class="headerBar"
+  >
+    <img
+      alt="Logo"
+      class="logo"
+      src="test-file-stub"
+    />
+    <div
+      class="shoppingCart"
+    >
+      <img
+        alt="shoppingCartIcon"
+        src="test-file-stub"
+      />
+      <div
+        data-testid="totalProducts"
+      >
+        2
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,48 @@
+version: '3.5'
+services:
+  mongo:
+    image: mongo:3.6.8
+    hostname: mongodb
+    ports:
+      - '27017:27017'
+    networks:
+      - dev
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=brandDiscountsUser
+      - MONGO_INITDB_ROOT_PASSWORD=brandDiscountsPassword
+      - MONGO_INITDB_DATABASE=desafio_walmart
+    restart: always
+  mongo_seed:
+    image: mongo:3.6.8
+    networks:
+      - dev
+    depends_on:
+      - mongo
+    volumes:
+      - ./mongo-seed:/mongo-seed
+    command:
+      /mongo-seed/import.sh
+  nodejs-server:
+    build: ./server
+    ports:
+      - "3003:3003"
+    container_name: node-api
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - mongo
+    networks:
+      - dev
+  react-ui:
+    build: ./app
+    ports:
+      - '3000:3000'
+    container_name: react-ui
+    depends_on:
+      - nodejs-server
+    networks:
+      - dev
+networks:
+  dev:
+    name: dev
+    driver: bridge

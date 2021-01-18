@@ -1,0 +1,38 @@
+@import '../../../commons/styleVars';
+
+.productRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid 1px $shadowColor;
+  .addRemoveButtons {
+    visibility: hidden;
+    margin: 10px 0px;
+    p {
+      padding: 0px 5px;
+    }
+  }
+  &:hover {
+    .addRemoveButtons {
+      visibility: visible;
+    }
+  }
+  img {
+    width: 100px;
+  }
+  p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+  }
+  .productSummary {
+    padding-left: 10px;
+    flex-grow: 3;
+  }
+  .productTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
