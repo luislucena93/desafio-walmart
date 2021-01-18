@@ -16,4 +16,6 @@ Para terminar todos los procesos y borrar las imagenes creadas correr el siguien
 
 ## Proyecto deployado en ambiente productivo
 
-Para ver el proyecto corriendo en un ambiente productivo navegar a [Desafio Wallmart Heroku](https://desafio-walmart-fe.herokuapp.com/)
+Para ver el proyecto corriendo en un ambiente productivo navegar a [Desafio Wallmart Heroku](https://desafio-walmart-fe.herokuapp.com/) 
+
+(tener en cuenta que si la aplicación no ha sido usada en los ultimos 15 minutos tardará un poco en responder ya que esta en el tier gratis de heroku)
